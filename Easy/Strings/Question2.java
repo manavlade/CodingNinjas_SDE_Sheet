@@ -13,6 +13,8 @@ public class Question2 {
      * If the given input string is "Welcome to Coding Ninjas", then you should
      * return "Ninjas Coding to Welcome" as the reversed string has only a single
      * space between two words and there is no leading or trailing space.
+     * 
+     * BOHOT IMP HAI ASKED IN 75 COMPANIES THAT TOO MNC'S
      */
     public static String reverseString(String str) {
         String[] arr = str.trim().split("\\s+");
