@@ -1,1 +1,2 @@
 # CodingNinjas_SDE_Sheet
+In this Repository I will be uploading the questions that i have solved of Coding Ninjas SDE with questions in categorized forms like easy, medium, hard and ninja and further categorized as Strings, array, Linkedlist etc 
