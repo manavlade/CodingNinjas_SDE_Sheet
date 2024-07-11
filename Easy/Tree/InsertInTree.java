@@ -37,15 +37,11 @@ public class InsertInTree {
      * properties :
      * a. The left subtree of any node contains nodes with a value less than the
      * node’s value.
-     * 
      * b. The right subtree of any node contains nodes with a value equal to or
      * greater than the node’s value.
-     * 
      * c. Right, and left subtrees are also binary search trees.
      * It is guaranteed that,
-     * 
      * d. All nodes in the given tree are distinct positive integers.
-     * 
      * e. The given BST does not contain any node with a given integer value.
      */
     public static TreeNode insertionInBST(TreeNode root, int val) {
