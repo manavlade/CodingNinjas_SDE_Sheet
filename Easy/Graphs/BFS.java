@@ -29,8 +29,7 @@ public class BFS {
      * Vertex 2 has a directed edge towards vertex 5.
      * Vertices 3, 4, and 5 have no outgoing edges.
      * We can also see this in the diagram below.
-     * BFS traversal: 0 1 2 3 4 5
-     * 
+     * BFS traversal: 0 1 2 3 4 5 
      * IMPORTANT: GOOGLE AMAZON FLIPKART
      */
     public static List<Integer> bfsTraversal(int n, List<List<Integer>> adj) {
