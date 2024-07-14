@@ -20,8 +20,7 @@ public class ListNode {
 public class ReverseNodeKTimes {
 
   public ListNode reverseKGroup(ListNode head, int k) {
-    if(head == null){
-      return new T
-    }
+    
+    
   }
 }

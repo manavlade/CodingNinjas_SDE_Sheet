@@ -19,4 +19,7 @@ public class Question1 {
         }
         return n;
     }
+    public static void main(String[] args) {
+        calcGCD(10, 20);
+    }
 }
