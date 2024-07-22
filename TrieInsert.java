@@ -31,7 +31,7 @@ public class TrieInsert {
         }
     }
 
-    public static boolean search(String words) {
+    public static boolean searchPrac(String words) {
         Node curr = root;
 
         for (int i = 0; i < words.length(); i++) {
@@ -41,10 +41,10 @@ public class TrieInsert {
                 return false;
             }
 
-            if(i == words.length() && curr.children[idx].endOfWord == false){
+            if (i == words.length() && curr.children[idx].endOfWord == false) {
                 return false;
             }
-            
+
             curr = curr.children[idx];
         }
         return true;
@@ -55,8 +55,8 @@ public class TrieInsert {
         for (int i = 0; i < word.length; i++) {
             insert(word[i]);
         }
-        System.out.println(search("their"));
-        System.out.println(search("thor"));
+        System.out.println(searchPrac("their"));
+        System.out.println(searchPrac("thor"));
     }
 
 }
