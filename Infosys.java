@@ -91,24 +91,42 @@ import java.util.Scanner;
         
     // }  
     
+    // public static void main(String[] args) {
+    //     Scanner sc = new Scanner(System.in);
+    //     int n = sc.nextInt();
+    //     int [] A = new int[n];
+
+    //     for (int i = 0; i < n; i++) {
+    //         A[i] = sc.nextInt();
+    //     }
+    //     int maxLength = 0;
+
+    //     for (int i = 1; i < n; i++) {
+    //         for (int j = 0; j < i; j++) {
+    //             if(A[i] > A[j]){
+    //                 if(A[i] + 1 > A[i]){
+    //                     A[i] = A[i] + 1;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
         int n = sc.nextInt();
         int [] A = new int[n];
-
+        int count = n/2;
+        int dp [] = new int[count+1];
+        int maxXOR = 0;
         for (int i = 0; i < n; i++) {
             A[i] = sc.nextInt();
         }
-        int maxLength = 0;
-
-        for (int i = 1; i < n; i++) {
-            for (int j = 0; j < i; j++) {
-                if(A[i] > A[j]){
-                    if(A[i] + 1 > A[i]){
-                        A[i] = A[i] + 1;
-                    }
-                }
-            }
+        Arrays.sort(A);
+       
+        for (int i = n; i>= 0; i--) {
+            maxXOR += A[i];
         }
     }
 }
