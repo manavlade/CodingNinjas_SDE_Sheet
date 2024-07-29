@@ -1,4 +1,5 @@
 package Medium.Strings;
+
 public class Palindrome {
     /*
      * Question
@@ -40,6 +41,7 @@ public class Palindrome {
             i--;
             j++;
         }
+
         return palindCount;
     }
 }

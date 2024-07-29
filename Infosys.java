@@ -112,21 +112,51 @@ import java.util.Scanner;
     //     }
     // }
 
+    // public static void main(String[] args) {
+    //     Scanner sc = new Scanner(System.in);
+        
+    //     int n = sc.nextInt();
+    //     int [] A = new int[n];
+    //     int count = n/2;
+    //     int dp [] = new int[count+1];
+    //     int maxXOR = 0;
+    //     for (int i = 0; i < n; i++) {
+    //         A[i] = sc.nextInt();
+    //     }
+    //     Arrays.sort(A);
+       
+    //     for (int i = n; i>= 0; i--) {
+    //         maxXOR += A[i];
+    //     }
+    // }
+
+    private static boolean checker(int m, int base){
+        int rem = m % base;
+
+        m = m / 2;
+
+        while (m >= base && (m % base == rem)) {
+            m = m / base;
+        }
+
+        if(m == rem){
+            return true;
+        }
+
+        return false;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
-        int n = sc.nextInt();
-        int [] A = new int[n];
-        int count = n/2;
-        int dp [] = new int[count+1];
-        int maxXOR = 0;
-        for (int i = 0; i < n; i++) {
-            A[i] = sc.nextInt();
+
+        int m = sc.nextInt();
+
+        int base = 2;
+
+        while (checker(m, base) != true) {
+            base++;
         }
-        Arrays.sort(A);
-       
-        for (int i = n; i>= 0; i--) {
-            maxXOR += A[i];
-        }
+
+        System.out.println(base);
     }
 }
