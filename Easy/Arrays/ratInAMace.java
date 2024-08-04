@@ -34,7 +34,6 @@ public class ratInAMace {
      * 
      * IMPORTANT QUESTION ASKED IN MORE THAN 10 COMPANIES: GOOGLE MICROSOFT SAMSUNG
      * IBM GOLDMAN SACHS
-     * 
      */
     public static boolean isSafe(int i, int j, int[][] arr, int n, boolean[][] visited) {
         return (i >= 0 && i < n) && (j >= 0 && j < n) && arr[i][j] == 1 && !visited[i][j];
