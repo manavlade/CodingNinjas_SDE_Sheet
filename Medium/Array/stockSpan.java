@@ -1,3 +1,4 @@
+package Medium.Array;
 import java.util.Stack;
 
 public class stockSpan {
