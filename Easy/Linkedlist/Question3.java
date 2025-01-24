@@ -1,4 +1,3 @@
-package Easy.Linkedlist;
 
 class Node {
     public int data;
