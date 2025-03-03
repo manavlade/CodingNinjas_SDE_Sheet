@@ -1,10 +1,10 @@
+import java.util.HashSet;
+import java.util.Scanner;
+
 /*
  * Question
  * Program for checking duplicate in an array
  */
-
-import java.util.HashSet;
-import java.util.Scanner;
 
 public class Duplica {
 
