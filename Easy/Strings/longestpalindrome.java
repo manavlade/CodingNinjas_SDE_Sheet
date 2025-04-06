@@ -1,9 +1,8 @@
-package Medium.Strings;
+package Easy.Strings;
 
 import java.util.Scanner;
-
-public class longestPalindromicSubstring {
-    public String longestPalindrome(String s) {
+public class longestpalindrome {
+    public static String longestPalindrome(String s) {
 
         if (s == null || s.length() < 1) {
             return "";
@@ -30,7 +29,7 @@ public class longestPalindromicSubstring {
         return s.substring(start, end + 1);
     }
 
-    public int expandAroundCenter(String s, int start, int end) {
+    public static int expandAroundCenter(String s, int start, int end) {
         while (start >= 0 && end < s.length() && s.charAt(start) == s.charAt(end)) {
             start--;
             end++;
@@ -38,10 +37,11 @@ public class longestPalindromicSubstring {
         return end - start - 1;
     }
 
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String str = "babad";
-    
+        longestPalindrome(str);
+
+        System.out.println( longestPalindrome(str));
     }
 }
